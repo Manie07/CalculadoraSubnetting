@@ -1,0 +1,63 @@
+<div class="bg-white p-4 rounded-lg shadow-sm w-100 max-w-md" >
+  <header class="text-center mb-4">
+    <h1 class="h3 font-weight-bold">Calculadora de Subnetting</h1>
+  </header>
+
+  <form id="subnet-form" class="mb-4" (ngSubmit)="f.form.valid && calcularSubnet()" #f="ngForm">
+    <label for="ip" class="form-label">Dirección IP</label>
+    <input
+      type="text"
+      id="ip"
+      name="ip"
+      placeholder="Ejemplo: 192.168.10.1"
+      required
+      class="form-control mb-3"
+      [(ngModel)]="ip"
+    />
+
+    <label for="mask" class="form-label">Máscara de Subred:</label>
+    <input
+      type="text"
+      id="mask"
+      name="mask"
+      placeholder="Ejemplo: 255.255.255.0"
+      required
+      class="form-control mb-3"
+      [(ngModel)]="mask"
+    />
+
+    <button type="submit" class="btn btn-primary">
+      Calcular
+    </button>
+  </form>
+
+  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h2 class="h5 font-weight-bold mb-3">Resultados</h2>
+        <p>
+          {{ mensaje }}
+        </p>
+        <p class="mb-2">
+          Máscara de subred: <span>{{ mascaraSubred }}</span>
+        </p>
+        <p class="mb-2">
+          Subred: <span>{{ subnet }}</span>
+        </p>
+        <p class="mb-2">
+          Dirección Inicial: <span>{{ startIP }}</span>
+        </p>
+        <p class="mb-2">
+          Dirección Final: <span>{{ endIP }}</span>
+        </p>
+        <p class="mb-2">
+          Tipo de Clase: <span>{{ classType }}</span>
+        </p>
+        <p class="mb-4">
+          Dirección Pública/Privada: <span>{{ publicPrivate }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

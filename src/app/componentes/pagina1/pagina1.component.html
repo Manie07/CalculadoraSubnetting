@@ -1,0 +1,291 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-decoration-underline">PROTOCOLOS</h1>
+      <br />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>IPv4</h2>
+      <br />
+      <P
+        >IPv4 es el nombre del protocolo de Internet utilizado actualmente para
+        las direcciones IP de los dominios. Estas direcciones IP se asignan
+        automáticamente cuando se registra un dominio. IPv4 utiliza direcciones
+        de 32 bits con hasta 12 caracteres en cuatro bloques de tres caracteres
+        cada uno, como 212.227.142.131. El sistema de nombres de dominio (DNS)
+        los convierte en nombres de dominio como 1and1.es. Combinando todos los
+        dígitos es posible un máximo de casi 4.300 millones de direcciones IP
+        que pronto se agotarán. Para seguir facilitando direcciones IP para
+        dominios, el protocolo sucesor IPv6 ya está en uso. Sin embargo, las
+        direcciones IPv4 existentes seguirán siendo válidas.</P
+      >
+    </div>
+    <div class="col">
+      <img src="assets/ipv4_logo.webp" alt="img" class="mx-auto my-4" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2>IPv6</h2>
+      <br />
+      <p>
+        El IPv6 es una actualización al protocolo IPv4, diseñado para resolver
+        el problema de agotamiento de direcciones. Su desarrollo comenzó en
+        diciembre de 1998 cuando Steve Deering y Robert Hinden, empleados de
+        Cisco y Nokia publicaron una especificación formal del protocolo a
+        través de un RFC y aún continua su implementación. Diseñado por Steve
+        Deering de Xerox PARC IPv6, su objetivo era sustituir finalmente a
+        IPv4,[cita requerida] cuyo límite en el número de direcciones de red
+        admisibles está empezando a restringir el crecimiento de Internet y su
+        uso, especialmente en China, India, y otros países asiáticos densamente
+        poblados. El nuevo estándar busca mejorar el servicio globalmente; por
+        ejemplo, proporcionando a futuras celdas telefónicas y dispositivos
+        móviles con sus direcciones propias y permanentes.
+      </p>
+    </div>
+    <div class="col">
+      <img src="assets/ipv6.webp" alt="img" class="mx-auto my-4" />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-decoration-underline">PARTES IP</h1>
+      <br />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br />
+      <P
+        >Para que este proceso funcione, una dirección IP tiene dos partes. La
+        primera parte de una dirección IP se usa como dirección de red, la
+        última parte como dirección host. Si toma el ejemplo 192.168.123.132 y
+        lo divide en estas dos partes, obtiene 192.168.123. Red .132 Host o
+        192.168.123.0: dirección de red. 0.0.0.132: dirección de host.</P
+      >
+    </div>
+    <div class="col">
+      <img src="assets/partesip.png" alt="img" class="mx-auto my-4" />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-decoration-underline">CLASES DE DIRECCIONES IP</h1>
+      <br />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table table-success table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">Clase</th>
+            <th scope="col">Bits iniciales</th>
+            <th scope="col">Intervalo (*)</th>
+            <th scope="col">N.º de redes</th>
+            <th scope="col">N.º de direcciones por red</th>
+            <th scope="col">N.º de hosts por red(‡)</th>
+            <th scope="col">Máscara de red</th>
+            <th scope="col">Dirección de broadcast</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">A</th>
+            <td>0</td>
+            <td>0.0.0.0 (**) - 127.255.255.255 (†)</td>
+            <td>128</td>
+            <td>16 777 216</td>
+            <td>16 777 214</td>
+            <td>255.0.0.0</td>
+            <td>x.255.255.255</td>
+          </tr>
+          <tr>
+            <th scope="row">B</th>
+            <td>10</td>
+            <td>128.0.0.0 - 191.255.255.255</td>
+            <td>16 382</td>
+            <td>65 536</td>
+            <td>65 534</td>
+            <td>255.255.0.0</td>
+            <td>x.x.255.255</td>
+          </tr>
+          <tr>
+            <th scope="row">C</th>
+            <td>110</td>
+            <td>192.0.0.0 - 223.255.255.255</td>
+            <td>2 097 150</td>
+            <td>256</td>
+            <td>254</td>
+            <td>255.255.255.0</td>
+            <td>x.x.x.255</td>
+          </tr>
+          <tr>
+            <th scope="row">D (Multicast)</th>
+            <td>1110</td>
+            <td>224.0.0.0 - 239.255.255.255</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">E (experimental)</th>
+            <td>1111</td>
+            <td>240.0.0.0 - 255.255.255.254</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-decoration-underline">DIRECCIONES IP PUBLICAS</h1>
+      <br />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br />
+      <h2>Rango de direcciones IP públicas</h2>
+      <P>
+        Una dirección IP pública es aquella que se le asigna a cualquier
+        dispositivo que se conecte de forma directa a Internet, por ejemplo, el
+        router de casa o los servidores donde se alojan las páginas web. La IP
+        pública es visible desde Internet. La IP pública es una dirección única
+        y nunca se puede repetir. La asignan los proveedores de Internet (ISP) y
+        se la conoce también como dirección IP dinámica, puesto que cambia cada
+        vez que reiniciamos el router o cada cierto período de tiempo. Esto
+        quiere decir que también existe una dirección IP pública fija o
+        estática, pero si se necesita por algún motivo, es necesario contactar
+        con el ISP para solicitar que nos la configuren manualmente.
+      </P>
+    </div>
+  </div>
+  <ul class="list-unstyled">
+    <ul>
+      <li>
+        <dt class="col-sm-3">Clase A:</dt>
+        <p>1.0.0.0 a 126.255.255.255</p>
+      </li>
+      <li>
+        <dt class="col-sm-3">Clase B:</dt>
+        <p>128.0.0.0 a 191.255.255.255</p>
+      </li>
+      <li>
+        <dt class="col-sm-3">Clase C:</dt>
+        <p>192.0.0.0 a 223.255.255.255</p>
+      </li>
+    </ul>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <hr />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-decoration-underline">DIRECCIONES IP PRIVADAS</h1>
+      <br />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br />
+      <P>
+        La dirección IP privada es una dirección fija que se asigna a cada
+        dispositivo conectado a una red privada o doméstica, es decir, la
+        dirección IP que el router asigna a cada ordenador, smartphones, smart
+        TV, tablet, videoconsola o cualquier otro dispositivo conectado a él.
+        Así, cada dispositivo conectado a un router tiene su propia dirección IP
+        privada, mientras comparten la misma IP pública. Las IP’s privadas no
+        son accesibles desde Internet y no cambian, a no ser que las asignemos
+        nosotros manualmente.
+      </P>
+    </div>
+  </div>
+  <ul class="list-unstyled">
+    <ul>
+      <li>
+        <dt class="col-sm-3">Clase A:</dt>
+        <p>10.0.0.0 a 10.255.255.255</p>
+      </li>
+      <li>
+        <dt class="col-sm-3">Clase B:</dt>
+        <p>172.16.0.0 a 172.31.255.255</p>
+      </li>
+      <li>
+        <dt class="col-sm-3">Clase C:</dt>
+        <p>192.168.0.0 a 192.168.255.255</p>
+      </li>
+    </ul>
+  </ul>
+</div>
+
+<footer class="container mt-5">
+  <p class="text-muted">
+    &copy; 2017–2023 Company, Inc. &middot;
+    <a href="#" class="text-muted">Privacy</a> &middot;
+    <a href="#" class="text-muted">Terms</a>
+  </p>
+  <div class="col">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </div>
+</footer>
